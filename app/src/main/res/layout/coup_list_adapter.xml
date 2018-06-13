@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/l1"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:id="@+id/coupname1"
+                android:textSize="13dp"
+          android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Name"/>
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/coupcode1"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:text="Code"/>
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:id="@+id/coupdis1"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:text="Discount"/>
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:id="@+id/coupdatestart1"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Date Start"/>
+
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="6dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:id="@+id/coupdateend1"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Date End"/>
+
+
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menucolor"
+                android:id="@+id/coupstat1"
+                android:textSize="13dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Status"/>
+            <LinearLayout
+                android:layout_width="0.5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/menucolor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:id="@+id/editcoup"
+
+                    android:src="@drawable/edit"
+                    android:layout_height="25dp"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:src="@drawable/del_icon"
+                    android:id="@+id/delcoup"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="25dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/menucolor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

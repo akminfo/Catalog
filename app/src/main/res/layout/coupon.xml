@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_coupon">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:background="@drawable/pink_rounded"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="General"
+                    android:textColor="#fff"
+                    android:id="@+id/generalcoupon"
+                    android:textSize="18dp"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/coupon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Coupon Name"
+                        android:id="@+id/coupnametext"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/coupon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Coupon Code"
+                        android:id="@+id/coupcode"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/type"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spinner4"
+
+                        android:gravity="left"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Group :"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/catlist"
+                android:layout_gravity="left"
+                android:textSize="22dp"
+                android:textColor="@color/colorAccent"
+
+
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/grey_rorunded"
+            android:layout_marginTop="5dp">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/cusgrouplist"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="none"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/checkgroup"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/discount"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Discount"
+                        android:id="@+id/disctext"
+                        android:textSize="18dp"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/amount"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Total Amount"
+                        android:id="@+id/amttext"
+                        android:inputType="numberDecimal"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/date"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+android:id="@+id/datestartlay"
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Date Start"
+                        android:id="@+id/datestart"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/date"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:onClick="dateEnd"
+                    android:id="@+id/dateendlay"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Date End"
+                        android:id="@+id/dateend"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usercoup"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="User Per Coupon "
+                        android:id="@+id/userpercoup"
+                        android:inputType="number"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:layout_marginBottom="60dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usercoup"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="User Per Customer"
+                        android:id="@+id/userpercus"
+                        android:inputType="number"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    <Button
+        android:id="@+id/savecoupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="addCoupon"
+        android:background="@color/colorAccent"
+        android:text="SAVE"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

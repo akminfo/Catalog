@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/user_settings">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@drawable/pink_rounded"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="General"
+            android:textColor="#fff"
+            android:id="@+id/generaluser"
+            android:textSize="18dp"
+
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+android:gravity="center"
+            android:orientation="horizontal">
+          <TextView
+              android:layout_width="130dp"
+              android:textColor="@color/colorAccent"
+              android:textSize="18dp"
+android:layout_marginBottom="5dp"
+              android:id="@+id/stnametext"
+              android:layout_height="wrap_content"
+              android:text="Store Name :"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+android:layout_marginLeft="5dp"
+android:layout_marginTop="5dp"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Store Name"
+                    android:id="@+id/stname"
+                    android:singleLine="true"
+                    android:textSize="18dp"
+                    android:textColor="@color/menucolor"
+                    android:textColorHint="@color/menucolor"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stowntext"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Store Owner :"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Store Owner"
+                            android:id="@+id/stown"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/staddtext"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Store Address :"
+
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:hint="Address"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:id="@+id/stadd"
+
+                            android:textSize="18dp"
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stcontext"
+
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Contact No. :"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Contact No"
+                            android:id="@+id/stcon"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+                            android:inputType="number"
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stemailtext"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email :"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Email"
+                            android:id="@+id/stemail"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stpantext"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="PAN Number :"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/stpan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:hint="PAN Number"
+
+                            android:singleLine="true"
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stgstintext"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="GSTIN :"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/stgstin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"
+                            android:hint="GSTIN"
+
+                            android:singleLine="true"
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="70dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:id="@+id/stinvtext"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="Invoice Start:"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shadow"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Invoice Start"
+                            android:id="@+id/stinv"
+                            android:singleLine="true"
+                            android:textSize="18dp"
+
+                            android:textColor="@color/menucolor"
+                            android:textColorHint="@color/menucolor"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/savesettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="saveSettings"
+        android:background="@color/colorAccent"
+        android:text="SAVE"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>

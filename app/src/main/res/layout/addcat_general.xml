@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/caticon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Category Name"
+                        android:id="@+id/proname"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/prodesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Description"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/menucolor"
+                    android:textColorHint="@color/menucolor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/metaicon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Meta Name"
+                        android:id="@+id/prometaname"
+                        android:textSize="18dp"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                android:orientation="vertical"
+                android:background="@drawable/shadow"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="10dp"
+                    android:id="@+id/prometadesc"
+                    android:hint="Meta Description"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/menucolor"
+                    android:textColor="@color/menucolor"
+                    android:textSize="18dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/shadow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+
+
+                    android:background="@drawable/color_shadow"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/keyword_icon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+
+
+                    android:background="@drawable/color_shadow1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/prometakey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Meta Keyword"
+                        android:textColor="@color/menucolor"
+                        android:textColorHint="@color/menucolor"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

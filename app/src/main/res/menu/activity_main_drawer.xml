@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/menu_top1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/dash"
+
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard" />
+    </group>
+    <group
+        android:id="@+id/menu_top2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/cat"
+            app:actionLayout="@layout/drop_item"
+            android:icon="@drawable/catalog"
+            android:title="Catalog" />
+        <group android:id="@+id/group_settings1"
+            android:checkableBehavior="single">
+            <group android:id="@+id/group_settingsa"
+                android:checkableBehavior="single">
+
+                <item android:id="@+id/prod"
+
+                    android:title="                Products"/>
+            </group>
+            <group android:id="@+id/group_settingsb"
+                android:checkableBehavior="single">
+                <item android:id="@+id/categories"
+
+                    android:title="                Categories"/>
+            </group>
+
+        </group>
+    </group>
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/cust"
+            app:actionLayout="@layout/drop_item2"
+            android:icon="@drawable/customers"
+            android:title="Customer" />
+        <group android:id="@+id/group_settings25"
+            android:checkableBehavior="single">
+            <group android:id="@+id/group_settings26"
+                android:checkableBehavior="single">
+
+                <item android:id="@+id/cust1"
+
+                    android:title="                Customers"/>
+            </group>
+            <group android:id="@+id/group_settings27"
+                android:checkableBehavior="single">
+                <item android:id="@+id/cusgroup"
+
+                    android:title="                Customer Group"/>
+            </group>
+
+
+    </group>
+
+    </group>
+    <group
+        android:id="@+id/menu_top3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sales"
+            app:actionLayout="@layout/drop_item1"
+            android:icon="@drawable/sales"
+            android:title="Sales" />
+        <group android:id="@+id/group_settings3"
+            android:checkableBehavior="single">
+            <group android:id="@+id/group_settings5"
+                android:checkableBehavior="single">
+
+                <item android:id="@+id/orders"
+
+                    android:title="                Orders"/>
+            </group>
+            <group android:id="@+id/group_settings4"
+                android:checkableBehavior="single">
+                    <item android:id="@+id/coupon"
+
+                    android:title="                Coupon"/>
+            </group>
+
+        </group>
+    </group>
+    <!--<group-->
+        <!--android:id="@+id/menu_to9"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/report"-->
+
+            <!--android:icon="@drawable/report"-->
+            <!--android:title="Report" />-->
+
+    <!--</group>-->
+
+    <group
+        android:id="@+id/menu_top12"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/adminman"
+            app:actionLayout="@layout/drop_item3"
+            android:icon="@drawable/customers"
+            android:title="User" />
+        <group android:id="@+id/group_settings30"
+            android:checkableBehavior="single">
+            <group android:id="@+id/group_settings31"
+                android:checkableBehavior="single">
+
+                <item android:id="@+id/user1"
+
+                    android:title="                Users"/>
+            </group>
+            <group android:id="@+id/group_settings32"
+                android:checkableBehavior="single">
+                <item android:id="@+id/usegroup"
+
+                    android:title="                User Group"/>
+            </group>
+
+
+        </group>
+
+    </group>
+    <group
+        android:id="@+id/menu_top8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/settingspage"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+    </group>
+
+    <group
+        android:id="@+id/menu_top10"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout1"
+            android:icon="@drawable/settings"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

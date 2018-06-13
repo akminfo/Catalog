@@ -1,0 +1,41 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.fingertip.catalog.adapter.DoubleDrawerView
+        android:id="@+id/double_drawer_view"
+        android:layout_width="240dp"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemBackground="@drawable/drawable_selected"
+        android:theme="@style/NavigationTheme"
+        android:background="#fff"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/main_navigation_view"
+            android:theme="@style/NavigationTheme"
+            app:headerLayout="@layout/nav_header_main"
+            android:background="#fff"
+            app:itemBackground="@drawable/drawable_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/navigation_main" />
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/settings_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/navigation_settings" />
+
+    </com.fingertip.catalog.adapter.DoubleDrawerView>
+
+</android.support.v4.widget.DrawerLayout>

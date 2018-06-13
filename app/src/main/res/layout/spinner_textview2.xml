@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:text=""
+    style="@style/spinnerItemStyle"
+    android:maxLines="1"
+    android:id="@+id/text1"
+    android:textSize="13dp"
+    android:ellipsize="marquee"
+    android:textColor="@color/menucolor"
+    android:layout_height="wrap_content"
+    />
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#d23c9d</color>
+    <color name="grey">#f1f1f1</color>
+    <color name="red">#EE0508</color>
+    <color name="proimageback">#F6F6F6</color>
+
+<color name="greyback">#EDEDED</color>
+    <color name="grey1">#bfbfbe</color>
+    <color name="grey2">#4d4d4c</color>
+    <color name="black">#000</color>
+    <color name="colorInactive">#bfbfbe</color>
+    <color name="white">#fff</color>
+    <color name="line">#DFDFDF</color>
+    <color name="golden">#f29c1f</color>
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+    <color name="heartcolor">#FF4081</color>
+    <color name="menucolor">#404246</color>
+    <color name="greybackground">#F4F4F4</color>
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+    <color name="orange">#f25822</color>
+    <color name="color_notification_back">#ffcd33</color>
+    <color name="color_notification_text">#3E4757</color>
+</resources>
